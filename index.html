@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Temperaturas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <fieldset>
+          <legend class="title-form">Converter Temperatura</legend>
+          <div class="input-field">
+            <label for="celsius" class="title-label">Celsius</label>
+            <input type="number" name="celsius" id="celsius" onchange="converterTemperatura(event)" />
+          </div>
+
+          <div class="input-field">
+            <label for="fahrenheit" class="title-label">Fahrenheit</label>
+            <input type="number" name="fahrenheit" id="fahrenheit" onchange="converterTemperatura(event)"/>
+          </div>
+
+          <div class="input-field">
+            <label for="kelvin" class="title-label">Kelvin</label>
+            <input type="number" name="kelvin" id="kelvin" onchange="converterTemperatura(event)" />
+          </div>
+
+          <div class="button">
+            <button type="button" onclick="limpar()">Limpar campos</button>
+          </div>
+
+        </fieldset>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
